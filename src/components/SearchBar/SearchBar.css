@@ -3,3 +3,19 @@
   text-align: center;
   margin: 40px auto;
 }
+
+.search-bar input:focus{
+  background-color: rgba(108, 13, 202, 0.5);
+  outline: none;
+}
+
+.search-bar input{
+  height: 30px;
+  width: 70%;
+  font-family: 'Comic Sans MS';
+  border-radius: 3%;
+  border: none;
+  margin-right: 1%;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.2);
+ 
+}

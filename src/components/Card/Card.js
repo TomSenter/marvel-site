@@ -6,10 +6,11 @@ class Card extends React.Component{
     render(){
         return(
             <div className="card">
+               
                 <h2>{this.props.character.name}</h2>
-                {this.props.character.description && <p>{this.props.character.description}</p>}
-                {!this.props.character.pic.includes('image_not_available')?<img src={this.props.character.pic + '/portrait_xlarge.'+this.props.character.extension}/>:<p id="filler">'Image lost in space'</p>}
-                <Link to={`/comics/${this.props.character.id}`}><button type="button">Get Comics</button></Link>
+                {this.props.character.description === '' && <p>{this.props.character.description}</p>}
+                {!this.props.character.pic.includes('image_not_available')&&<img  src={this.props.character.pic + '/portrait_fantastic.'+this.props.character.extension}/>}
+                <Link to={`/comics/${this.props.character.id}`}><button  type="button">Get Comics</button></Link>
                
 
             </div>

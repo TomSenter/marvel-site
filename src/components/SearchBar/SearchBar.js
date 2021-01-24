@@ -6,7 +6,7 @@ class SearchBar extends React.Component{
         super(props);
 
         this.state ={
-            input: ''
+            input: 'Search Marvel Characters'
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -22,12 +22,16 @@ class SearchBar extends React.Component{
 
     search(){
        this.props.search(this.state.input);
+
+       this.setState({
+           input: 'Search Marvel Characters'
+       })
     }
     
     render(){
         return(
             <div className='search-bar'>
-                <input type="text" value={this.state.input} onChange={this.handleChange}/>
+                <input type="text" value={this.state.input} onChange={this.handleChange} />
                 <button type="button" onClick={this.search}>Submit</button>
             </div>
         );

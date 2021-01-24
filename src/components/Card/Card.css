@@ -1,15 +1,21 @@
 .card{
     width:30%;
-    background-color:red;
-    
+    background-image: url('./Images/card-background.jpg');
+    background-size: cover;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.4);
+    min-height: 100px;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: white;
     
     margin: 0 2% 2% 2%;
-    border-radius: 10%;
+    border-radius: 5%;
     font-size: 1rem;
 }
+
+
 
 .card img{
     width: 50%;
@@ -21,26 +27,26 @@
 .card h2{
     text-align: center;
     font-size: 1.5em;
-    color: white;
+    
+    font-weight: 700;
 }
 
 .card h2,.card p,.card img, .card button{
     margin-top: 5%;
     
+    
 }
 
 .card p{
     font-size: 0.9em;
-    color: white;
+   
     text-align: center;
+    
 }
 
 .card button{
     margin-bottom: 5%;
 }
 
-#filler{
-    color: white;
-    font-size: 2em;
-    margin-bottom: 10%;
-}
+/*could use pseudo classes bur height is causing a problem*/
+

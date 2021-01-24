@@ -2,6 +2,8 @@ import './ComicSet.css';
 import React from 'react';
 import Comic from '../../Comic/Comic';
 
+import {Link} from 'react-router-dom';
+
 class ComicSet extends React.Component{
     componentDidMount(){
         this.props.getComics(this.props.match.params.id);
@@ -9,11 +11,15 @@ class ComicSet extends React.Component{
 
     render(){
         return(
-            <div className="comic-set">
-             {this.props.comics.map(comic=>{
-                 return <Comic key={comic.id} comic={comic}/>
-             })}
+            <div className="comic-set-div">
+                <h1>Comics</h1>
+                <Link exact to='/'><button className="comic-set-button">Home</button></Link>
+              <div className="comic-set">
+               {this.props.comics.map(comic=>{
+                   return <Comic key={comic.id} comic={comic}/>
+               })}
              
+              </div>
             </div>
         );
     }

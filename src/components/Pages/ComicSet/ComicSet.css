@@ -1,0 +1,27 @@
+.comic-set{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1rem;
+    justify-content: center;
+   
+    
+}
+
+.comic-set-div{
+    text-align: center;
+   
+}
+
+.comic-set-div h1{
+    font-weight: 700;
+    text-decoration: underline;
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.comic-set-button{
+    margin-bottom: 20px;
+}

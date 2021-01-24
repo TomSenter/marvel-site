@@ -7,7 +7,7 @@ class Home extends React.Component{
     render(){
         return(
             <div className="home-page">
-                <h1>Home</h1>
+                <h1>Search Characters</h1>
                 <SearchBar search={this.props.search}/>
                 <CardSet characters={this.props.characters}/>
                 

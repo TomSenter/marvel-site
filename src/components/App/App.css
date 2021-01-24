@@ -1,0 +1,18 @@
+.App{
+    font-size: 1rem;
+}
+
+button{
+    border-radius: 20px;
+    background-color: rebeccapurple;
+    color: white;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+}
+
+button:focus{
+    outline:none;
+}
