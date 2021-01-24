@@ -7,7 +7,7 @@ import Marvel from '../../util/Marvel';
 
 //pages
 import Home from '../Pages/Home/Home';
-import Comics from '../Pages/Comics/Comics';
+import ComicSet from '../Pages/ComicSet/ComicSet';
 
 
 // components
@@ -19,10 +19,12 @@ class App extends React.Component{
     super(props);
 
     this.state={
-      characters: []
+      characters: [],
+      comics: []
     };
 
     this.searchCharacter = this.searchCharacter.bind(this);
+    this.getComics = this.getComics.bind(this);
   }
 
   searchCharacter(term){
@@ -33,6 +35,14 @@ class App extends React.Component{
       
     });
  }
+
+  getComics(id){
+    Marvel.getComics(id).then(results=>{
+      this.setState({
+        comics: results
+      });
+    })
+  }
 
   
 
@@ -46,7 +56,9 @@ class App extends React.Component{
             <Route path='/' exact  render={(props)=>(
             <Home {...props} search={this.searchCharacter} characters={this.state.characters}/>
              )}/>
-            <Route path='/comics' component={Comics}/>
+            <Route path='/comics/:id' render={(props)=>(
+            <ComicSet {...props} getComics={this.getComics} comics={this.state.comics}/>
+            )}/>
             <Footer/>
          
        

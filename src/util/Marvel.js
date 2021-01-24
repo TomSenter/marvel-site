@@ -43,7 +43,7 @@ const Marvel = {
      const baseUrl = 'http://gateway.marvel.com/v1/public/characters';
      const apiKey = '33b3a16ed4496639f1ef57bcf1c44823';
      const privateKey = '2141ecf8715dcde9af9c2d78aa973cc9530355c6';
-     const limit = '9';
+     const limit = '12';
      
      const ts = Date.now();
 
@@ -65,15 +65,40 @@ const Marvel = {
      }
 
 
-    }
+    },
 
-   /* getComics(id){
+   async getComics(id){
         // going to do getComics in here
-        let id = id;
+        const baseUrl = `http://gateway.marvel.com/v1/public/characters/${id}/comics`;
+        const apiKey = '33b3a16ed4496639f1ef57bcf1c44823';
+        const privateKey = '2141ecf8715dcde9af9c2d78aa973cc9530355c6';
+        const limit = '12';
+        
+        const ts = Date.now();
+   
+        const hash = md5(ts + privateKey + apiKey);
+   
+        const url = `${baseUrl}?limit=${limit}&ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+
+        console.log(url);
+
+        try{
+            const response = await fetch(url);
+            if(response.ok){
+                const jsonResponse = await response.json();
+                return jsonResponse.data.results.map(comic=>{
+                   return {title:comic.title,id:comic.id,description:comic.description,pic:comic.thumbnail.path,extension:comic.thumbnail.extension,issue:comic.issueNumber,format:comic.format}
+               });
+            }
+   
+        }catch(error){
+            console.log(error);
+        }
 
 
     }
-    */
+    
 };
+
 
 export default Marvel;

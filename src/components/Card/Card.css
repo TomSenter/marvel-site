@@ -26,10 +26,21 @@
 
 .card h2,.card p,.card img, .card button{
     margin-top: 5%;
+    
 }
 
 .card p{
     font-size: 0.9em;
     color: white;
     text-align: center;
+}
+
+.card button{
+    margin-bottom: 5%;
+}
+
+#filler{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10%;
 }
