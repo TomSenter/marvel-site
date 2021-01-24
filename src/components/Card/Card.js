@@ -10,7 +10,7 @@ class Card extends React.Component{
                 <h2>{this.props.character.name}</h2>
                 <p>{this.props.character.description}</p>
                 {!this.props.character.pic.includes('image_not_available')&&<img  src={this.props.character.pic + '/portrait_fantastic.'+this.props.character.extension}/>}
-                <Link to={`/comics/${this.props.character.id}`}><button  type="button">See Comics</button></Link>
+                <Link to={`/comics/${this.props.character.id}/${this.props.character.name}`}><button  type="button">See Comics</button></Link>
                
 
             </div>

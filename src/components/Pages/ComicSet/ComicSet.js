@@ -12,11 +12,11 @@ class ComicSet extends React.Component{
     render(){
         return(
             <div className="comic-set-div">
-                <h1>Comics</h1>
+                <h1>{`${this.props.match.params.name} Comics`}</h1>
                 <Link exact to='/'><button className="comic-set-button">Home</button></Link>
               <div className="comic-set">
                {this.props.comics.map(comic=>{
-                   return <Comic key={comic.id} comic={comic}/>
+                   return <Comic key={comic.id} comic={comic} />
                })}
              
               </div>

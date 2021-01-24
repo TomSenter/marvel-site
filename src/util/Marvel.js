@@ -43,7 +43,7 @@ const Marvel = {
      const baseUrl = 'http://gateway.marvel.com/v1/public/characters';
      const apiKey = '33b3a16ed4496639f1ef57bcf1c44823';
      const privateKey = '2141ecf8715dcde9af9c2d78aa973cc9530355c6';
-     const limit = '12';
+     const limit = '20';
      
      const ts = Date.now();
 
@@ -72,7 +72,7 @@ const Marvel = {
         const baseUrl = `http://gateway.marvel.com/v1/public/characters/${id}/comics`;
         const apiKey = '33b3a16ed4496639f1ef57bcf1c44823';
         const privateKey = '2141ecf8715dcde9af9c2d78aa973cc9530355c6';
-        const limit = '12';
+        const limit = '20';
         
         const ts = Date.now();
    
