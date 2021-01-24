@@ -56,7 +56,7 @@ const Marvel = {
          if(response.ok){
              const jsonResponse = await response.json();
              return jsonResponse.data.results.map(character=>{
-                return {name:character.name,id:character.id,description:character.description,pic:character.thumbnail.path}
+                return {name:character.name,id:character.id,description:character.description,pic:character.thumbnail.path,extension:character.thumbnail.extension}
             });
          }
 

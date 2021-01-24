@@ -19,7 +19,7 @@ class App extends React.Component{
     super(props);
 
     this.state={
-      character: []
+      characters: []
     };
 
     this.searchCharacter = this.searchCharacter.bind(this);
@@ -28,7 +28,7 @@ class App extends React.Component{
   searchCharacter(term){
     Marvel.searchCharacter(term).then(results=>{
       this.setState({
-        character: results
+        characters: results
       });
       
     });
@@ -43,7 +43,9 @@ class App extends React.Component{
         <div className="App">
           
             <Navbar/>
-            <Route path='/' exact  component={Home}/>
+            <Route path='/' exact  render={(props)=>(
+            <Home {...props} search={this.searchCharacter} characters={this.state.characters}/>
+             )}/>
             <Route path='/comics' component={Comics}/>
             <Footer/>
          

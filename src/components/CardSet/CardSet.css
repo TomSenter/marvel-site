@@ -1,0 +1,8 @@
+.card-set{
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
