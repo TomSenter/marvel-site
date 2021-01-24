@@ -45,7 +45,9 @@
 }
 
 .card button{
-    margin-bottom: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   height: 45px;
 }
 
 /*could use pseudo classes bur height is causing a problem*/
