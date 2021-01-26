@@ -13,10 +13,17 @@ footer{
 footer p,footer h4{
     font-size: 1.1em;
     color: white;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
 footer p{
     margin-top: 5px;
    
+}
+
+
+@media only screen and (max-width: 508px){
+    footer p,footer h4{
+        margin-left: 1%;
+    }
 }

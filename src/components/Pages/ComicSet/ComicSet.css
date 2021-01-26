@@ -1,4 +1,4 @@
-.comic-set{
+/*.comic-set{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -6,7 +6,7 @@
     justify-content: center;
    
     
-}
+}*/
 
 .comic-set-div{
     text-align: center;

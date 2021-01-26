@@ -2,6 +2,8 @@
     min-height: 500px;
     text-align: center;
     font-size: 1rem;
+    width: 100%;
+    
 }
 
 .home-page h1{
@@ -9,5 +11,8 @@
     font-weight: 700;
     text-decoration: underline;
     font-family: 'Comic Sans MS';
-    margin-top: 15px;
+    
+    width: 50%;
+   
+    margin: 15px auto;
 }

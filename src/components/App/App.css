@@ -1,5 +1,6 @@
 .App{
     font-size: 1rem;
+   width: 100%;
 }
 
 button{
@@ -7,8 +8,7 @@ button{
     background-color: rgb(108, 13, 202);
     color: white;
     height: 40px;
-   
-    width: 80px;
+    width: 90px;
     cursor: pointer;
     text-align: center;
     font-family: 'Comic Sans MS';
@@ -16,4 +16,13 @@ button{
 
 button:focus{
     outline:none;
+   
+
+}
+
+button:hover{
+    border: 2px solid  rgb(108, 13, 202);
+    background-color: white;
+    color: rgb(108, 13, 202);
+    font-weight: 700;
 }
