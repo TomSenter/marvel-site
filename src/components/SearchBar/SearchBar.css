@@ -23,9 +23,20 @@
  
 }
 
+@media only screen and (max-width: 648px){
+   .search-bar-button{
+     margin-top: 10px;
+   }
+}
 
 @media only screen and (max-width:514px){
   .search-bar input{
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .search-bar input{
+    width: 100%;
   }
 }

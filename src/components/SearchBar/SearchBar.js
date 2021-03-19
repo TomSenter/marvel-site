@@ -32,7 +32,7 @@ class SearchBar extends React.Component{
         return(
             <div className='search-bar'>
                 <input type="text" value={this.state.input} onChange={this.handleChange} />
-                <button type="button" onClick={this.search}>Submit</button>
+                <button class="search-bar-button" type="button" onClick={this.search}>Submit</button>
             </div>
         );
     }

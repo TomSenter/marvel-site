@@ -12,6 +12,7 @@ button{
     cursor: pointer;
     text-align: center;
     font-family: 'Comic Sans MS';
+    border: none;
 }
 
 button:focus{
