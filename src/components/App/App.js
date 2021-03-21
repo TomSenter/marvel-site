@@ -53,10 +53,10 @@ class App extends React.Component{
         <div className="App">
           
             <Navbar/>
-            <Route path='#/' exact render={(props)=>(
+            <Route path='/' exact render={(props)=>(
             <Home {...props} search={this.searchCharacter} characters={this.state.characters}/>
              )}/>
-            <Route path='#/comics/:id/:name' render={(props)=>(
+            <Route path='/comics/:id/:name' render={(props)=>(
             <ComicSet {...props} getComics={this.getComics} comics={this.state.comics}/>
             )}/>
             <Footer/>
