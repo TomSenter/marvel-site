@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {HashRouter as Router,Route} from 'react-router-dom';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 
 //util
 import Marvel from '../../util/Marvel';
@@ -49,7 +49,7 @@ class App extends React.Component{
 
   render(){
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           
             <Navbar/>
