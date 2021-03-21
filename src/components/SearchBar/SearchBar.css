@@ -28,5 +28,9 @@
    .search-bar-button{
      margin-top: 10px;
    }
+
+   .search-bar input{
+     text-align: center;
+   }
 }
 
