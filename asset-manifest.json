@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/marvel-site/static/css/main.7d010f3c.chunk.css",
+    "main.js": "/marvel-site/static/js/main.b5b366ba.chunk.js",
+    "main.js.map": "/marvel-site/static/js/main.b5b366ba.chunk.js.map",
+    "runtime-main.js": "/marvel-site/static/js/runtime-main.676046e5.js",
+    "runtime-main.js.map": "/marvel-site/static/js/runtime-main.676046e5.js.map",
+    "static/js/2.a36b0c75.chunk.js": "/marvel-site/static/js/2.a36b0c75.chunk.js",
+    "static/js/2.a36b0c75.chunk.js.map": "/marvel-site/static/js/2.a36b0c75.chunk.js.map",
+    "index.html": "/marvel-site/index.html",
+    "static/css/main.7d010f3c.chunk.css.map": "/marvel-site/static/css/main.7d010f3c.chunk.css.map",
+    "static/js/2.a36b0c75.chunk.js.LICENSE.txt": "/marvel-site/static/js/2.a36b0c75.chunk.js.LICENSE.txt",
+    "static/media/Card.css": "/marvel-site/static/media/card-background.3a6fa0d4.jpg",
+    "static/media/NavBar.css": "/marvel-site/static/media/marvelBanner1.5340a154.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.676046e5.js",
+    "static/js/2.a36b0c75.chunk.js",
+    "static/css/main.7d010f3c.chunk.css",
+    "static/js/main.b5b366ba.chunk.js"
+  ]
+}
