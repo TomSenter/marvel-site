@@ -40,7 +40,7 @@ const Marvel = {
 
     async searchCharacter(term){
           // get the url first 
-     const baseUrl = 'http://gateway.marvel.com/v1/public/characters';
+     const baseUrl = 'https://gateway.marvel.com/v1/public/characters';
      const apiKey = '33b3a16ed4496639f1ef57bcf1c44823';
      const privateKey = '2141ecf8715dcde9af9c2d78aa973cc9530355c6';
      const limit = '20';
@@ -69,7 +69,7 @@ const Marvel = {
 
    async getComics(id){
         // going to do getComics in here
-        const baseUrl = `http://gateway.marvel.com/v1/public/characters/${id}/comics`;
+        const baseUrl = `https://gateway.marvel.com/v1/public/characters/${id}/comics`;
         const apiKey = '33b3a16ed4496639f1ef57bcf1c44823';
         const privateKey = '2141ecf8715dcde9af9c2d78aa973cc9530355c6';
         const limit = '20';
