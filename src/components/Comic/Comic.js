@@ -6,8 +6,8 @@ class Comic extends React.Component{
         return(
             <div className="card">
                 <h2>{this.props.comic.title}</h2>
-                 <p>{this.props.comic.description}</p>
-                {!this.props.comic.pic.includes('image_not_available')&&<img src={this.props.comic.pic + '/portrait_fantastic.'+this.props.comic.extension}/>}
+                 <p className="scroll-p">{this.props.comic.description}</p>
+                {!this.props.comic.pic.includes('image_not_available')&&<img className="comic-image" src={this.props.comic.pic + '/portrait_fantastic.'+this.props.comic.extension}/>}
 
             </div>
         );

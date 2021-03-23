@@ -39,3 +39,14 @@
 }
 
 */
+
+.comic-image{
+    margin-bottom: 2vh;
+}
+
+.scroll-p{
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 200px;
+}
